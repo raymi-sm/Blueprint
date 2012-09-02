@@ -1,0 +1,259 @@
+/* RESET */
+
+*{ margin:0; padding:0; }
+
+body, html{ 
+	background:transparent;
+	vertical-align:baseline;
+	font-size:100%;
+}
+
+h1{ font-size:26px; }
+h2{ font-size:20px; }
+h3{ font-size:16px; }
+h4{ font-size:14px; }
+h5{ font-size:12px; }
+h6{ font-size:10px; }
+
+fieldset{ border: none; }
+
+li{ list-style:none; }
+
+a{text-decoration:none; outline: none; display: block;}
+
+a:hover{ text-decoration:underline }
+
+img{ border:none; }
+ 
+div.clearfix{ width:1px; height:1px; display:block; clear:both; content:'.'; }
+
+/*-----------------------------------------------------------------------GENERALES-----------------------------------------------------------------*/
+
+body{ background: #dfdfdf url("images/body-bg.jpg") repeat-x; font-size: 12px;}
+
+.container{ width: 960px; margin: auto; }
+
+p, a{ font-family: Georgia, Arial, sans-serif; font-size: 12px; }
+
+h2, h3{ color: #464646; font-size: 24px; }
+
+h4{ color: #fff; font-family: Georgia, Times New Roman, sans-serif; padding: 0 0 20px; }
+
+
+@font-face {
+    font-family: 'Lobster';
+    src: url'(font/Lobster/Lobster_1.3-webfont.eot');
+    src: url('font/Lobster/Lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Lobster/Lobster_1.3-webfont.woff') format('woff'),
+         url('font/Lobster/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('font/Lobster/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('font/Droid-Sans/DroidSans-webfont.eot');
+    src: url('font/Droid-Sans/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Droid-Sans/DroidSans-webfont.woff') format('woff'),
+         url('font/Droid-Sans/DroidSans-webfont.ttf') format('truetype'),
+         url('font/Droid-Sans/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('font/Droid-Sans/DroidSans-Bold-webfont.eot');
+    src: url('font/Droid-Sans/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Droid-Sans/DroidSans-Bold-webfont.woff') format('woff'),
+         url('font/Droid-Sans/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('font/Droid-Sans/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-----------------------------------------------------------------------HEADER-----------------------------------------------------------------*/
+
+.header{ overflow: hidden; }
+
+	.header em{ color: #707070;  text-shadow: 2px 1px 0 #000000; }
+
+.top-menu{ overflow: hidden; height: 36px; }
+
+	.top-menu li{ float: left; line-height: 36px; margin: 0 20px 0 0; }
+	
+	.top-menu a{ text-transform: uppercase; color: #acacac; font-size: 11px; }
+
+.main-header{ background: url("images/spotlight-header.png") no-repeat; padding: 57px 0 58px; overflow: hidden; }
+
+	.main-header h1{ background: url("images/logo-icon.png") no-repeat; padding: 0 0 6px 60px; }
+
+			.logo{ float: left; position: relative; padding: 0 214px 0 0;}
+			
+				.logo span{ position: absolute; top: 10px; left: 257px; }
+				
+				.logo h1 a{ font-family: 'Lobster', sans-serif; font-size: 43px; color: white; text-shadow: 2px 3px 4px #000000; text-decoration: none; font-weight: lighter; }
+		
+	.social{ float: right; }
+		
+	.social li{ float: left; margin: 0 23px 0 0; padding: 0 0 0 47px; }
+	
+	.social p{ color: white; font-size: 20px; font-family: Arial, sans-serif; font-weight: bold;}
+	
+	.social li.subscribers{ background: url("images/rss-icon.png") no-repeat;}
+	
+	.social li.followers{ background: url("images/twitter-icon.png") no-repeat; }	
+
+/*-----------------------------------------------------------------------MENU-----------------------------------------------------------------*/
+
+.menu{ 
+			background: url("images/menu-bg.jpg") repeat-x; 
+			overflow: hidden; 
+			height: 42px; 
+			border-bottom: 1px solid #cecece; 
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px; 
+			clear: both;
+			margin: -22px 0 15px;
+		}
+
+	.menu ul{ border-bottom: 1px solid #ababab; overflow: hidden; margin: 0 0 0 10px; }
+
+	.menu li { float: left; line-height: 42px; }
+	
+	.menu a{ color: #5c5c5c;  font-weight: bold; font-family: Arial; font-size: 14px; /*background: red;*/ padding: 0 17px; border-left: 1px solid white; border-right: 1px solid #e2e2e2; }
+	
+	.menu a.first{ border-left: none; padding: 0 17px 0 10px; }
+	
+/*-----------------------------------------------------------------------PRE-FOOTER-----------------------------------------------------------------*/
+
+.pre-footer{ background: #1B1B1B; clear: both; } 
+
+/*-----------------------------------------------------------------------FOOTER-----------------------------------------------------------------*/
+
+.footer{ background: #272727; clear: both; }
+
+
+/*-----------------------------------------------------------------------CONTENT-----------------------------------------------------------------*/
+
+.content{ margin: 0 0 23px 0; overflow: hidden; }
+
+.col{ float: left; }
+		
+	.col p{ color: #666666; }
+	
+	.col a{ color: #418db1; }
+	
+	.col-1 h3, .col-3 h3{ font-size: 14px;  font-weight: bold; margin: 0 0 18px 0; font-family: Arial, sans-serif; }
+
+	.block, .slider, .post, .sidebar{ 
+		background: #fff; 
+		border-left: 1px solid #cecece; 
+		border-right: 1px solid #cecece; 
+		margin: 10px 0;
+		border-bottom: 1px solid #cecece; 
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;  
+	}
+	
+.col-1, .col-2{ margin: 0 15px 0 0 ; }
+
+.slider, .post{ padding: 14px 0 17px 9px; }
+
+.slider{ width: 500px; height: 295px; }
+
+.col-1{ width: 180px;}
+
+	.block, .sidebar { padding: 18px 36px 20px 18px }
+		
+	.col li{ margin: 0 0 16px 0; }
+
+.col-2{ width: 510px; }
+	
+	.post{ padding-left: 16px; overflow: hidden; }
+	
+		.meta{ overflow: hidden; }
+	
+			.meta li{ float: left; margin: 13px 10px 16px 0; padding: 0 0 0 15px;}
+			
+			.meta li#admin{ background: url("images/meta-admin-icon.jpg") 0 2px no-repeat; }
+			
+			.meta li#tech{ background: url("images/meta-tech-icon.jpg") 0 2px no-repeat; }
+			
+			.meta li#date{ background: url("images/meta-date-icon.jpg") 0 2px no-repeat; }
+	
+	.thumb{ float: left; clear: both; }
+	
+		.thumb a{ background: #cecece; padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin: 0 20px 0 0; }
+		
+	.post-content{ padding:  10px 30px 0 0;}
+	
+		 a.btn { background:url("images/btn-bg.png") no-repeat; margin: 30px 190px 0 172px; padding: 5px 0 18px 18px; color: #5b5b5b; text-decoration: none; }
+		 
+		 a.older{ margin: 27px 0 0; padding-left:10px; }
+					
+	.slider{ position: relative; padding-bottom: 0; }
+	
+	#rotate{ z-index: 0; }
+	
+	.caption{ overflow: hidden; position: absolute; top: 213px; background: rgba(28, 28, 28, 0.7); width: 491px; padding: 9px 0; }
+		
+			.message{ padding: 0 0 0 12px; }
+			
+				.message h2{ color: white;  }
+				
+				.message p{ color: #898989; }
+							
+			.arrows{ position: absolute; top: 240px; right: 10px; z-index: 1; }
+			
+				.arrows a{ padding: 10px; text-indent: -9999px; float: left; margin: 0 5px 0 0;}
+			
+				.arrows a#next{ background: url("images/arrow-next.png") no-repeat ; }
+				
+				.arrows a#prev{ background: url("images/arrow-prev.png") no-repeat; }
+
+.col-3{ width: 237px; margin: 10px 0 0; }
+
+.search{ background: url("images/search-bar-bg.jpg") repeat-x; height: 33px; -moz-border-radius: 5px;
+		-webkit-border-radius: 5px; border-radius: 5px; box-shadow: 0px 2px 1px #ABABAB }
+
+	.search form{ border: 1px solid white; padding: 4px 0;  -moz-border-radius: 5px;
+		-webkit-border-radius: 5px; border-radius: 5px; }
+
+	input#search-bar{ background: none; border: 0 none; padding: 5px 0 5px 10px; width: 200px }
+	
+	.search-btn{ border: none; background: url("images/submit-icon.png"); height: 19px; width: 19px; cursor: pointer; text-indent: -9999px; }
+
+	.sidebar img{ border: 1px solid #919191; margin: 0 0 15px 0;}
+	
+	.sponsors{ padding-bottom: 0; }
+	
+	.tw-feed h3{ background: url("images/content-twitter-icon.png") no-repeat; color: #599596; padding: 0 0 0 24px; }
+	
+	/*-----------------------------------------------------------------------PRE-FOOTER-----------------------------------------------------------------*/
+	
+.pre-footer{ overflow: hidden; padding: 45px 0 20px 0; }
+
+	.pre-footer p, .pre-footer a, .pre-footer li, .footer p, .footer a{ font-size: 11px; color: #858585; line-height: 20px; font-family: 'DroidSansRegular', sans-serif;}
+	
+	.pre-footer a, .footer a{ display: inline; color: #377AA9; }
+	
+	.pre-footer li.text{ margin: 0 58px 0 0; }
+		
+	.pre-footer li:last{ margin-right: 0; }
+	
+	 .boxes{ float: left; width: 200px; }
+
+/*-----------------------------------------------------------------------FOOTER-----------------------------------------------------------------*/
+
+.footer{ overflow: hidden; }
+
+	p.primero{ float: left; }
+	
+	p.segundo{ float: right; }
